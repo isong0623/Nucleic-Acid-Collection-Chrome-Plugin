@@ -1,0 +1,298 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+div,
+p,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+blockquote,
+pre,
+button,
+input,
+textarea,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+}
+
+a {
+    font-size: 12px;
+}
+
+body {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -webkit-padding-end: 20px;
+  -webkit-padding-start: 6px;
+  /* OVERRIDE */
+  background-image: url('../images/select.png'),
+      -webkit-linear-gradient(#ffffff 0%, #f7f7f7 100%);
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+#header {
+    height: 90px;
+    line-height: 90px;
+    width: 100%;
+    border-bottom: 1px solid #E4E4E4;
+}
+
+#header_content {
+    width: 900px;
+    margin: 0 auto;
+}
+
+#header img {
+    margin-top: 27px;
+    margin-right: 20px;
+    float: left;
+    width: 44px;
+    height: 44px;
+}
+
+#header #title {
+    float: left;
+    font-size: 30px;
+    font-family: "微软雅黑";
+    font-weight: 100;
+    color: #000000;
+}
+
+#container {
+    font-family: "微软雅黑";
+    width: 900px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+#container .title {
+    margin-top: 50px;
+    margin-bottom: 27px;
+    font-size: 16px;
+    font-family: "微软雅黑";
+    color: #000000;
+}
+
+#container .line,
+#container .webPage,
+#container .docPage {
+    width: 100%;
+}
+
+#container .line .content,
+#container .webPage .content,
+#container .docPage .content {
+    overflow: hidden;
+}
+
+.Left {
+    float: left;
+}
+
+#idOfOnlyInputIDCard {
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    width: auto;
+    padding-left: 29px;
+    cursor: pointer;
+    display: inline-block;
+    color: #000;
+    background: url("static/image/btn_checkboxoff_normal.png") no-repeat 0 7px;
+}
+
+.ContentBox {
+    margin-left: 29px;
+    position: relative;
+}
+
+#inputContentBox #scriptContentBox {
+    font-size: 14px;
+    line-height: 28px;
+    height: 28px;
+    color: #000;
+    font-family: "微软雅黑";
+}
+
+#idOfOnlyInputIDCard {
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    width: auto;
+    padding-left: 29px;
+    cursor: pointer;
+    display: inline-block;
+    color: #000;
+    background: url("static/image/btn_checkboxoff_normal.png") no-repeat 0 7px;
+}
+
+#idOfCameraEnable {
+    font-size: 14px;
+    height: 28px;
+    line-height: 28px;
+    width: auto;
+    padding-left: 29px;
+    cursor: pointer;
+    display: inline-block;
+    color: #000;
+    background: url("static/image/btn_checkboxoff_normal.png") no-repeat 0 7px;
+}
+
+#idOfBarcodeEnable {
+    font-size: 14px;
+    height: 28px;
+    margin-left: 20px;
+    line-height: 28px;
+    width: auto;
+    padding-left: 29px;
+    cursor: pointer;
+    display: inline-block;
+    color: #000;
+    background: url("static/image/btn_checkboxoff_normal.png") no-repeat 0 7px;
+}
+
+#idOfQRCodeEnable {
+    font-size: 14px;
+    height: 28px;
+    margin-left: 20px;
+    line-height: 28px;
+    width: auto;
+    padding-left: 29px;
+    cursor: pointer;
+    display: inline-block;
+    color: #000;
+    background: url("static/image/btn_checkboxoff_normal.png") no-repeat 0 7px;
+}
+
+#idOfOCREnable {
+    font-size: 14px;
+    height: 28px;
+    margin-left: 20px;
+    line-height: 28px;
+    width: auto;
+    padding-left: 29px;
+    cursor: pointer;
+    display: inline-block;
+    color: #000;
+    background: url("static/image/btn_checkboxoff_normal.png") no-repeat 0 7px;
+}
+
+#idOfCameraEnable:hover{
+    background: url("static/image/btn_checkboxoff_hover.png") no-repeat 0 7px;
+}
+
+#idOfCameraEnable:active{
+    background: url("static/image/btn_checkboxoff_press.png") no-repeat 0 7px;
+}
+
+#idOfCameraEnable.checked{
+    background: url("static/image/btn_checkboxon_normal.png") no-repeat 0 7px;
+}
+
+#idOfCameraEnable.checked:hover{
+    background: url("static/image/btn_checkboxon_hover.png") no-repeat 0 7px;
+}
+
+#idOfCameraEnable.checked:active{
+    background: url("static/image/btn_checkboxon_press.png") no-repeat 0 7px;
+}
+
+
+#idOfBarcodeEnable:hover{
+    background: url("static/image/btn_checkboxoff_hover.png") no-repeat 0 7px;
+}
+
+#idOfBarcodeEnable:active{
+    background: url("static/image/btn_checkboxoff_press.png") no-repeat 0 7px;
+}
+
+#idOfBarcodeEnable.checked{
+    background: url("static/image/btn_checkboxon_normal.png") no-repeat 0 7px;
+}
+
+#idOfBarcodeEnable.checked:hover{
+    background: url("static/image/btn_checkboxon_hover.png") no-repeat 0 7px;
+}
+
+#idOfBarcodeEnable.checked:active{
+    background: url("static/image/btn_checkboxon_press.png") no-repeat 0 7px;
+}
+
+
+#idOfQRCodeEnable:hover{
+    background: url("static/image/btn_checkboxoff_hover.png") no-repeat 0 7px;
+}
+
+#idOfQRCodeEnable:active{
+    background: url("static/image/btn_checkboxoff_press.png") no-repeat 0 7px;
+}
+
+#idOfQRCodeEnable.checked{
+    background: url("static/image/btn_checkboxon_normal.png") no-repeat 0 7px;
+}
+
+#idOfQRCodeEnable.checked:hover{
+    background: url("static/image/btn_checkboxon_hover.png") no-repeat 0 7px;
+}
+
+#idOfQRCodeEnable.checked:active{
+    background: url("static/image/btn_checkboxon_press.png") no-repeat 0 7px;
+}
+
+#idOfOCREnable:hover{
+    background: url("static/image/btn_checkboxoff_hover.png") no-repeat 0 7px;
+}
+
+#idOfOCREnable:active{
+    background: url("static/image/btn_checkboxoff_press.png") no-repeat 0 7px;
+}
+
+#idOfOCREnable.checked{
+    background: url("static/image/btn_checkboxon_normal.png") no-repeat 0 7px;
+}
+
+#idOfOCREnable.checked:hover{
+    background: url("static/image/btn_checkboxon_hover.png") no-repeat 0 7px;
+}
+
+#idOfOCREnable.checked:active{
+    background: url("static/image/btn_checkboxon_press.png") no-repeat 0 7px;
+}
+
+#idOfOnlyInputIDCard:hover{
+    background: url("static/image/btn_checkboxoff_hover.png") no-repeat 0 7px;
+}
+
+#idOfOnlyInputIDCard:active{
+    background: url("static/image/btn_checkboxoff_press.png") no-repeat 0 7px;
+}
+
+#idOfOnlyInputIDCard.checked{
+    background: url("static/image/btn_checkboxon_normal.png") no-repeat 0 7px;
+}
+
+#idOfOnlyInputIDCard.checked:hover{
+    background: url("static/image/btn_checkboxon_hover.png") no-repeat 0 7px;
+}
+
+#idOfOnlyInputIDCard.checked:active{
+    background: url("static/image/btn_checkboxon_press.png") no-repeat 0 7px;
+}

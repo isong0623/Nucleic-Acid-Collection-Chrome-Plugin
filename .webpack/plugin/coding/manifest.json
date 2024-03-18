@@ -1,0 +1,126 @@
+{
+	"name": "青岛核酸检测辅助插件",
+	"description":"功能：\n\t1、语音播报已采集信息\n\t2、脚本化自动采集\n\t3、采样数据导出\n\t4、离线采样\n\t5、服务器数据缓存\n\t6、摄像头识别条码、二维码、文字身份证号文本\n\n 使用说明及更新维护见微博：天梦星网络科技工作室\n\n本插件用于减轻防疫压力，永不收费。",
+	"version":"2.1",
+	"manifest_version":2,
+
+	"permissions": [
+		"tts",
+		"debugger",
+		"webRequest",
+		"webRequestBlocking",
+		"tabs",
+		"*://hsjc.qingdao.gov.cn/**"
+	],
+	"content_scripts": [
+		{
+			"matches": ["*://hsjc.qingdao.gov.cn/**"],
+			"js": [
+				"xlsx.core.min.js",
+
+				"core/utils/barcode/exif.js",
+				"core/utils/barcode/DecoderWorker.js",
+				"core/utils/barcode/QRCodeReader.js",
+				"core/utils/barcode/BarcodeReader.js",
+
+				"core/utils/crypt/crypto.js",
+
+				"core/utils/CryptUtils.js",
+				"core/utils/Base64Utils.js",
+				"core/utils/TimeUtils.js",
+				"core/utils/FunctionUtils.js",
+				"core/utils/LogUtils.js",
+				"core/utils/CheckUtils.js",
+				"core/utils/QRCodeUtils.js",
+				"core/utils/OCRUtils.js",
+				"core/utils/DOMUtils.js",
+				"core/utils/CameraUtils.js",
+				"core/utils/WebSQLUtils.js",
+
+				"core/database/LocalGridManager.js",
+				"core/database/LocalSamplingRecordManager.js",
+				"core/database/LocalUserInfoManager.js",
+				"core/database/OfflineSamplingManager.js",
+
+				"core/api/ApiRequest.js",
+				"core/api/ApiResponse.js",
+				"core/api/Api.js",
+				"core/api/ApiProvider.js",
+
+				"core/device/DeCardDevice.js",
+				"core/device/HuaShiDevice.js",
+				"core/device/ShenSiDevice.js",
+				"core/device/DeviceManager.js",
+
+				"core/HSCJTTSEngine.js",
+				"core/HSCJLocalSettingManager.js",
+				"core/MessageManager.js",
+				"core/HSCJApiProvider.js",
+				"core/HSCJScriptEngine.js",
+				"core/HSCJOfflineEngine.js",
+				"core/HSCJControlPanel.js",
+				"core/HSCJHtmlPageManager.js",
+
+				"core/HSCJApiInterceptor.js",
+				"core/HSCJApiInterceptorImpl4Content.js",
+				"core/HSCJApiReceiver.js",
+				"core/HSCJApiReceiverImpl4Content.js",
+
+				"content.js"
+			]
+		}
+	],
+	"icons": {
+		"16" : "./static/image/icon.png",
+		"48" : "./static/image/icon.png",
+		"128": "./static/image/icon.png"
+	},
+	"background": {
+		"scripts": [
+
+			"core/utils/Base64Utils.js",
+			"core/utils/FunctionUtils.js",
+			"core/utils/TimeUtils.js",
+			"core/utils/LogUtils.js",
+
+			"core/HSCJTTSEngine.js",
+			"core/MessageManager.js",
+			"core/HSCJLocalSettingManager.js",
+
+			"core/HSCJApiInterceptor.js",
+			"core/HSCJApiInterceptorImpl4Background.js",
+			"core/HSCJApiReceiver.js",
+			"core/HSCJApiReceiverImpl4Background.js",
+
+			"background.js"
+		],
+		"persistent": true
+	},
+	"options_page": "options.html",
+	"browser_action": {
+		"default_icon": "./static/image/icon.png",
+		"default_title": "打开核酸检测网址"
+	},
+	"homepage_url": "https://weibo.com/u/7711875625",
+	"commands": {
+		"start_script": {
+			"suggested_key": {
+				"windows": "Ctrl+Shift+Q",
+				"mac": "MacCtrl+Shift+Q"
+			},
+			"description":"启停自动录入脚本"
+		}
+	},
+	"web_accessible_resources": [
+		"**.js",
+		"**.wav",
+		"**.png",
+		"**.jpg",
+		"**.jpeg",
+		"**.gif",
+		"**.ico",
+		"**.css",
+		"**.woff",
+		"**.html"
+	]
+}
